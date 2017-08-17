@@ -2,7 +2,13 @@
 
 A theme for Ghost
 
+一款夏日海滩主题
+
 ![](https://raw.githubusercontent.com/mrzhiin/ghost-theme-beach/master/screenshots/home.png)
+
+#注意
+
+该主题只在 Ghost 0.11.11 上测试过
 
 # 使用
 
