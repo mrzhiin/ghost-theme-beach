@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{meta_title}}</title>
+    <link rel="stylesheet" href="{{asset "css/lib.min.css"}}">
+    <link rel="stylesheet" href="{{asset "css/main.min.css"}}">
+    <link href="//fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="//at.alicdn.com/t/font_382851_4qayeynr2oab57b9.js"></script>
+    <script src="{{asset "js/base.min.js"}}"></script>
+    {{ghost_head}}
+</head>
+
+<body>
+
+    <header class="base-width-full">
+        <div class="bar">
+            <div class="nav" id="nav-open">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-menu"></use>
+                </svg>
+            </div>
+            <div class="feature">
+                <div class="home">
+                    <a href="{{@blog.url}}">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-home"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="rss">
+                    <a href="{{@blog.url}}/rss/">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-rss"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="side" id="side">
+            {{> 'side'}}
+        </div>
+        <div class="bg">
+            <canvas></canvas>
+        </div>
+    </header>
+
+    <main class="base-width">
+        <div class="mainer">
+            {{{body}}}
+        </div>
+        <div class="asider">
+            {{> "asider"}}
+        </div>
+    </main>
+
+    <footer>
+        <div class="about"><a href="http://www.zhiin.net">Zhiin-2017</ahref></div>
+        <div class="gotop" id="gotop">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-anchor"></use>
+            </svg>
+        </div>
+    </footer>
+
+    {{ghost_foot}}
+
+</body>
+
+</html>

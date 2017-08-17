@@ -1,0 +1,44 @@
+{{!< default}} 
+<article class="index">
+
+    {{#foreach posts}}
+
+    <section>
+        <div class="meta">
+            <div class="author">
+                <div class="t">
+                    <img src="{{author.profile_image}}" alt="{{author.name}}" />
+                </div>
+                <span>{{author}}</span>
+            </div>
+            <time>
+                <div class="t">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-rili"></use>
+                    </svg>
+                </div>
+                <span>{{date format="YYYY-MM-DD"}}</span>
+            </time>
+        </div>
+        <header>
+            <a href="{{url}}">
+                <h1>{{title}}</h1>
+            </a>
+        </header>
+        <main>
+            <p>{{excerpt words="24"}}</p>
+        </main>
+        <div class="do">
+            <a href="{{url}}" class="more">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-readmore"></use>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    {{/foreach}}
+
+    </article>
+
+    {{pagination}}

@@ -1,0 +1,24 @@
+<nav class="pagination">
+    <div class="prev">
+        {{#if prev}}
+        <a href="{{page_url prev}}">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-chevronleft"></use>
+            </svg>
+        </a>
+        {{/if}}
+    </div>
+    <div class="pages">
+        <span>{{page}}</span>
+        <span>{{pages}}</span>
+    </div>
+    <div class="next">
+        {{#if next}}
+        <a href="{{page_url next}}">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-chevronright"></use>
+            </svg>
+        </a>
+        {{/if}}
+    </div>
+</nav>

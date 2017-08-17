@@ -1,0 +1,32 @@
+<aside>
+    <section class="search">
+        <header>
+            <div class="img">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-search"></use>
+                </svg>
+            </div>
+            <h1>搜索</h1>
+        </header>
+        <main>
+            <gcse:search></gcse:search>            
+        </main>
+    </section>
+    <section class="tag">
+        <header>
+            <div class="img">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-tagtextoutline"></use>
+                </svg>
+            </div>
+            <h1>标签</h1>
+        </header>
+        <main>
+            {{#get "tags" limit="all" include="count.posts" order="count.posts desc" }} 
+            {{#foreach tags}}
+            <a href="/tag/{{slug}}">{{name}} ({{count.posts}})</a>
+            {{/foreach}} 
+            {{/get}}
+        </main>
+    </section>
+</aside>

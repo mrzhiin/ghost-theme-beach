@@ -1,0 +1,12 @@
+{
+    "name":"beach",
+    "description": "A theme for Ghost, Cool",
+    "version":"1.0.0",
+    "author": {
+        "name": "MrZhiin"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mrzhiin/ghost-theme-beach.git"
+    }
+}
